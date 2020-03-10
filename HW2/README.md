@@ -1,3 +1,9 @@
+# File Info
+
+The main file is `hw2.py`, which contains data extraction and model running.
+
+The regression is implemented in `Regress.py`. And it has a test file `Regress_test.py`.
+
 # Installations
 
 `hw2.py` file uses the following libraries
