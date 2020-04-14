@@ -160,15 +160,7 @@ print(model_fit2)
 # In[51]:
 
 
-X = Data['church2'].values
-Y = model_fit['y_hat']
-Y = Y[1]
-plt.plot(X,Y)
-
-Y1 = model_fit2['y_hat']
-Y1 = Y1[19]
-plt.figure()
-plt.plot(X,Y1)
+# After changing the prior on the explanatory variable estimate there was not a substantial effect on the posterior
 
 
 # In[ ]:
