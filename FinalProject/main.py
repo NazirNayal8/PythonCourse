@@ -517,5 +517,5 @@ def EvaluateAccuracy(data, model):
 
 model = torch.load('Amazon-DataSets/model5.pt')
 
-testing_N
+testing_N = 80000
 EvaluateAccuracy(TestingData[:testing_N], model)
