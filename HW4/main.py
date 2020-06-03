@@ -10,7 +10,7 @@ alphas = tt.stanMeansNewSysPooled
 sample = tt.textToSend
 
 from sklearn.feature_extraction.text import CountVectorizer
-vec = CountVectorizer(ngram_range=(1, 2))
+vec = CountVectorizer(ngram_range=(2, 2))
 X = vec.fit_transform(sample)
 X
 
