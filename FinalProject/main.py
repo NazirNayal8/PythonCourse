@@ -498,19 +498,19 @@ def EvaluateAccuracy(data, model):
   evaluate the accuracy of the data in this list 
   """
   model.eval()
-  den = len(test_data)
+  den = len(data)
   num = 0
 
   for i in range(den):
 
-    sentence = EncodeData(test_data[i][0], WordToIndex)
-    label = EncodeLabel(test_data[i][1], LabelToIndex)
+    sentence = EncodeData(data[i][0], WordToIndex)
+    label = EncodeLabel(data[i][1], LabelToIndex)
 
     score = model(sentence)
 
     choice = score.cpu().detach().numpy().argmax()
 
-    if choice == test_data[i][1] - 1:
+    if choice == data[i][1] - 1:
       num += 1
 
   print(f"Accuracy: {100.0 * num / den}")
